@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/formAula.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+    <form>
+        <p> <label for="nome">Nome:</label></p>
+        <input type="text" id="nome" name="nome" onblur="onBlurInput(this)"><br><br>
+
+        <p> <label for="sobrenome">Sobrenome:</label></p>
+        <input type="text" id="sobrenome" name="sobrenome"  onblur="onBlurInput(this)"><br><br>
+
+        <p> <label for="email">Email:</label></p>
+        <input type="email" id="email" name="email" onblur="onBlurInput(this)"><br><br>
+
+        <input type="button" value="Testar" onclick="pegaDados(this)">
+     </form>
+    
+     <h2 id = "mostra">Somando</h2>
+     <form>
+        <p> <label for="valor1">Valor1:</label></p>
+        <input type="number" id="valor1" name="valor1"><br><br>
+
+        <p> <label for="valor2">Valor2:</label></p>
+        <input type="number" id="valor2" name="valor2">
+
+        <input type="button" value="Calcular" onclick="somar">
+     </form>
+</body>
+</html>
